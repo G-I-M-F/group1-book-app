@@ -1,0 +1,245 @@
+
+/* nav--bar */
+
+.navbar{
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    z-index: 999;
+    backdrop-filter: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;background-color: white;
+    box-shadow: 0px 2px 3px black;
+    padding: 15px 8px ;
+}
+/* .brand_name{
+    font-size: 3rem;
+} */
+.navbar_links ul{
+    display: flex;
+    gap: 10px;
+}
+.navbar_links ol{
+    list-style: none;
+    cursor:pointer;
+    display: flex;
+}
+.navbar_links ol a{
+
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+.navbar_links ol:hover{
+    color: green;
+}
+.connect-nav{
+    background-color:rgb(153, 235, 153);
+}
+.icon{
+    display:none;
+}
+
+.hide-bar{
+    margin-left: -2000px;
+    display: none;
+}
+
+@media screen and (max-width:768px){
+    .navbar{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .navbar-sub{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        width: 100%;
+        padding-inline: 10px;
+        padding-block: 10px;
+    }
+    .icon{
+        display: block;
+    }
+    .navbar_links{
+        height: 80vh;
+        width: 100%;
+    }
+    .navbar_links ul{
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+}
+/* Hero(The attractive animated part) */
+.hero{
+    position: relative;
+    height: 60vh;
+    width: 100%;
+}
+
+.hero-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+.hero-txt-con{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-txt{
+    color: rgb(153, 235, 153);
+    font-weight: bold;
+    text-shadow: 0px 0px 10px black;
+    align-items: left;
+}
+.hero-txt1{
+    font-size:15px;
+    font-weight:1px;
+    color:white;
+    
+}
+
+/* header(where the products wii be) */
+.container{
+    padding-top:40px;
+}
+.title{
+    text-align:center;
+    color:rgb(69, 248, 99);
+}
+.title span{
+    color:black;
+}
+.head-con{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block:40px;
+    gap:20px;
+    flex-wrap: wrap
+}
+
+.card-con{
+    width: 300px;
+    /* background-color:white; */
+    border-radius:5px;
+    /* box-shadow: 0px 2px 3px black; */
+    border:1px solid gray;
+}
+.card-img-wrap :hover{
+    transform: scale(1.15);
+    transition: 3ms ease-in-out;
+}
+.card-img-wrap{
+    position: relative;
+    height: 250px;
+    width: 100%;
+    
+}
+.card-img-wrap img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.card-txt{
+    padding:10px;
+    cursor:pointer;
+}
+.card-txt button{
+    height: 35px;
+    border-radius:5px;
+    background-color:rgb(75, 221, 119);
+    cursor:pointer;    
+}
+
+/* connecting with users */
+.connect{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap: 5px;
+}
+.input{
+    height: 50px;
+    width: 400px;
+    border-radius:5px;
+    border:none;
+    box-shadow:0px 0px 5px black;
+}
+.button{
+    height: 50px;
+    border-radius:5px;
+    background-color:rgb(75, 221, 119);
+    cursor:pointer;
+    border: 0px;
+}
+/* @media screen and (max-width:768px){
+    .connect{
+        height:0px;
+    }
+    .input{
+        height:0px;
+    }
+    .button{
+        height:0px;
+    } */
+
+
+
+/* @media screen and (max-width:768px){
+    .head-con{
+        
+    }
+} */
+
+/* footer and sponsors */
+.footer-con{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(153, 235, 153);
+    gap:45px;
+    
+}
+.footer-con ul ol{
+    cursor:pointer;
+    gap:10px;
+}
+.footer-con ul{
+    display:flex;
+    
+}
+.social{
+    gap:10px;
+}
+.contact{
+    display: flex;
+    flex-direction: column
+
+}
+.contact ul{
+    display: flex;
+    flex-direction: column;
+}
+/* @media screen and (max-width:768px){ */
+    
